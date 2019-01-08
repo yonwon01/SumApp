@@ -49,8 +49,8 @@ podTemplate(label: label,
 	  stage('Inspection Code') {
 		container('maven') {
 			sh "mvn sonar:sonar \
-				  -Dsonar.host.url= \
-				  -Dsonar.login="
+  -Dsonar.host.url=http://169.56.108.6:32542 \
+  -Dsonar.login=a7c308eeafad17768d81e5f841ccac8bca83d6ab"
 		}
 	  }
 	  */
