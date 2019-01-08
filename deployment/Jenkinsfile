@@ -45,7 +45,7 @@ podTemplate(label: label,
 			sh "mvn -B clean package"
 		}
 	  }
-		/*
+		
 	  stage('Inspection Code') {
 		container('maven') {
 			sh "mvn sonar:sonar \
@@ -53,7 +53,7 @@ podTemplate(label: label,
   -Dsonar.login=a7c308eeafad17768d81e5f841ccac8bca83d6ab"
 		}
 	  }
-	  */
+	  
 	  stage('Build Docker image') {
 		container('docker') {
 		  docker.withRegistry("${dockerRegistry}", 'registry-credentials') {
