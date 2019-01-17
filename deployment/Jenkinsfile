@@ -22,7 +22,7 @@ podTemplate(label: label,
 	) {
 	
 	node(label) {
-	//try {
+	try {
 		
 	  
 	  stage('Get Source') {
